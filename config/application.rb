@@ -12,6 +12,7 @@ module Group9Portism
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     #
+    
     #MAY NEED TO DO THIS FOR HEROKU 
     #
     #config.assets.initialize_on_precompile = false
