@@ -35,6 +35,11 @@ gem 'devise'
 gem 'carrierwave'
 gem 'rmagick'
 
+gem 'activerecord'
+gem 'activeadmin', github: 'gregbell/active_admin'
+#gem "meta_search"
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
