@@ -15,7 +15,7 @@ module Group9Portism
     
     #MAY NEED TO DO THIS FOR HEROKU 
     #
-    #config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = false
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
