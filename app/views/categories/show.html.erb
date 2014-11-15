@@ -1,0 +1,23 @@
+<div class="row">
+  
+<p id="notice"><%= notice %></p>
+<div class="page-header"> Title: <%= @category.title %></div>
+
+<% @category.items.each do |item| %>
+  <div class = "thumbnail col-sm-6 col-md-2">
+    <%= image_tag item.image_url.to_s, size:"100" %>
+    <h3 class="item_title"><%= item.title %></h3>
+    <p class=""><%= truncate(item.details, length: 50, separator: ' ', omission: '... (continued)') %></p>
+    <div class="price"> <%= "item price" %></div>
+    <div class="id"><%= "item id" %></div>
+  </div>
+
+<% end %>
+</div>
+
+<div class="bottom_nav">
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>
+</div>
+
+
