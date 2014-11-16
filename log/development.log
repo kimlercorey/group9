@@ -33574,3 +33574,1598 @@ PG::DuplicateColumn: ERROR:  column "reset_password_token" of relation "users" a
 Migrating to AddDeviseToUsers (20141115222639)
   [1m[35m (0.1ms)[0m  BEGIN
   [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeviseToUsers (20141115222639)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20141115222639"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-15 22:30:26 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 858ms (Views: 848.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/symptoms.css?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:28 -0500
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:28 -0500
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:28 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:28 -0500
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:28 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:28 -0500
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:28 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:28 -0500
+
+
+Started GET "/assets/symptoms.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 22:30:28 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-15 22:30:28 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.6ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.6ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.1ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2014-11-15 22:30:28 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.2ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-11-15 22:31:10 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (2.3ms)[0m  SELECT COUNT(*) FROM "admin_users"
+  [1m[36mAdminUser Load (1.2ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"   ORDER BY admin_users.updated_at desc LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "categories"
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT  "categories".* FROM "categories"   ORDER BY categories.updated_at desc LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items"   ORDER BY items.updated_at desc LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "piggybak_shipping_methods"
+  [1m[36m (4.3ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_states"[0m
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "symptoms"
+  [1m[36mSymptom Load (0.3ms)[0m  [1mSELECT  "symptoms".* FROM "symptoms"   ORDER BY symptoms.updated_at desc LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "tags"
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT  "tags".* FROM "tags"   ORDER BY tags.updated_at desc LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "piggybak_tax_methods"
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"   ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_orders"[0m
+  [1m[35mPiggybak::Order Load (0.3ms)[0m  SELECT  "piggybak_orders".* FROM "piggybak_orders"   ORDER BY piggybak_orders.updated_at desc LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_payment_methods"[0m
+  [1m[35mPiggybak::PaymentMethod Load (0.3ms)[0m  SELECT  "piggybak_payment_methods".* FROM "piggybak_payment_methods"   ORDER BY piggybak_payment_methods.updated_at desc LIMIT 1
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_countries"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (37.4ms)
+  [1m[35mPiggybak::Country Load (1.2ms)[0m  SELECT  "piggybak_countries".* FROM "piggybak_countries"  WHERE "piggybak_countries"."abbr" = 'US'  ORDER BY name ASC LIMIT 1
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.6ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_navigation.html.haml (7.1ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/pjax.html.haml (3.4ms)
+Completed 200 OK in 4036ms (Views: 3788.7ms | ActiveRecord: 64.7ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2014-11-15 22:31:14 -0500
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:14 -0500
+
+
+Started GET "/assets/jquery-ui/effect.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:14 -0500
+
+
+Started GET "/assets/jquery-ui/menu.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:14 -0500
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:14 -0500
+
+
+Started GET "/assets/jquery-ui/autocomplete.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:14 -0500
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:14 -0500
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:14 -0500
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:14 -0500
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:14 -0500
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2014-11-15 22:31:15 -0500
+
+
+Started GET "/admin/category?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:31:45 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"category"}
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT  "categories".* FROM "categories"   ORDER BY categories.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  WHERE "items"."category_id" = $1  [["category_id", 4]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"  WHERE "items"."category_id" = $1[0m  [["category_id", 3]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  WHERE "items"."category_id" = $1  [["category_id", 2]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"  WHERE "items"."category_id" = $1[0m  [["category_id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "categories"
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (80.8ms)
+Completed 200 OK in 97ms (Views: 87.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/admin/category/2/show_in_app" for 127.0.0.1 at 2014-11-15 22:32:14 -0500
+Processing by RailsAdmin::MainController#show_in_app as HTML
+  Parameters: {"model_name"=>"category", "id"=>"2"}
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = 2  ORDER BY "categories"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/categories/2
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2014-11-15 22:32:14 -0500
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCategory Load (0.3ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"  WHERE "items"."category_id" = $1[0m  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 548ms (Views: 545.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/symptoms.css?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/symptoms.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 22:32:15 -0500
+
+
+Started GET "/admin/category" for 127.0.0.1 at 2014-11-15 22:32:18 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"category"}
+  [1m[35mCategory Load (0.5ms)[0m  SELECT  "categories".* FROM "categories"   ORDER BY categories.id desc LIMIT 20 OFFSET 0
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"  WHERE "items"."category_id" = $1[0m  [["category_id", 4]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  WHERE "items"."category_id" = $1  [["category_id", 3]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"  WHERE "items"."category_id" = $1[0m  [["category_id", 2]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  WHERE "items"."category_id" = $1  [["category_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (34.8ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (0.9ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_navigation.html.haml (3.1ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/pjax.html.haml (3.9ms)
+Completed 200 OK in 365ms (Views: 359.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/piggybak~state?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:32:23 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"piggybak~state"}
+  [1m[35mPiggybak::State Load (2.6ms)[0m  SELECT  "piggybak_states".* FROM "piggybak_states"   ORDER BY piggybak_states.id desc LIMIT 20 OFFSET 0
+  [1m[36mPiggybak::Country Load (0.6ms)[0m  [1mSELECT "piggybak_countries".* FROM "piggybak_countries"  WHERE "piggybak_countries"."id" IN (250, 249, 248)  ORDER BY name ASC[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "piggybak_states"
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (108.1ms)
+Completed 200 OK in 123ms (Views: 111.6ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/admin/piggybak~order?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:32:33 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"piggybak~order"}
+  [1m[36mPiggybak::Country Load (0.5ms)[0m  [1mSELECT  "piggybak_countries".* FROM "piggybak_countries"  WHERE "piggybak_countries"."abbr" = 'US'  ORDER BY name ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "piggybak_countries".* FROM "piggybak_countries"  WHERE "piggybak_countries"."abbr" = 'US'  ORDER BY name ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "piggybak_countries".* FROM "piggybak_countries"  WHERE "piggybak_countries"."abbr" = 'US'  ORDER BY name ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "piggybak_countries".* FROM "piggybak_countries"  WHERE "piggybak_countries"."abbr" = 'US'  ORDER BY name ASC LIMIT 1
+  [1m[36mPiggybak::Order Load (0.5ms)[0m  [1mSELECT  "piggybak_orders".* FROM "piggybak_orders"   ORDER BY piggybak_orders.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "piggybak_orders"
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (27.8ms)
+Completed 200 OK in 41ms (Views: 34.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/category?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:32:41 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"category"}
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT  "categories".* FROM "categories"   ORDER BY categories.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  WHERE "items"."category_id" = $1  [["category_id", 4]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"  WHERE "items"."category_id" = $1[0m  [["category_id", 3]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  WHERE "items"."category_id" = $1  [["category_id", 2]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"  WHERE "items"."category_id" = $1[0m  [["category_id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "categories"
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (33.6ms)
+Completed 200 OK in 46ms (Views: 39.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/item?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:32:43 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"item"}
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT  "items".* FROM "items"   ORDER BY items.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (3, 2)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (41.4ms)
+Completed 200 OK in 56ms (Views: 48.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/tag?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:33:12 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"tag"}
+  [1m[35mTag Load (2.2ms)[0m  SELECT  "tags".* FROM "tags"   ORDER BY tags.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "tags"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (44.5ms)
+Completed 200 OK in 58ms (Views: 49.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/admin/category?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:33:21 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"category"}
+  [1m[35mCategory Load (0.5ms)[0m  SELECT  "categories".* FROM "categories"   ORDER BY categories.id desc LIMIT 20 OFFSET 0
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"  WHERE "items"."category_id" = $1[0m  [["category_id", 4]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  WHERE "items"."category_id" = $1  [["category_id", 3]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"  WHERE "items"."category_id" = $1[0m  [["category_id", 2]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  WHERE "items"."category_id" = $1  [["category_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "categories"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (33.6ms)
+Completed 200 OK in 45ms (Views: 39.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/piggybak~shipping_method?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:33:29 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"piggybak~shipping_method"}
+  [1m[35mPiggybak::ShippingMethod Load (0.4ms)[0m  SELECT  "piggybak_shipping_methods".* FROM "piggybak_shipping_methods"   ORDER BY piggybak_shipping_methods.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_shipping_methods"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (10.1ms)
+Completed 200 OK in 25ms (Views: 17.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/piggybak~country?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:33:31 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"piggybak~country"}
+  [1m[35mPiggybak::Country Load (0.8ms)[0m  SELECT  "piggybak_countries".* FROM "piggybak_countries"   ORDER BY piggybak_countries.name asc LIMIT 20 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_countries"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (69.1ms)
+Completed 200 OK in 81ms (Views: 75.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:33:52 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "admin_users"
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"   ORDER BY admin_users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "categories"
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  "categories".* FROM "categories"   ORDER BY categories.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items"   ORDER BY items.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "piggybak_shipping_methods"
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_states"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "symptoms"
+  [1m[36mSymptom Load (0.2ms)[0m  [1mSELECT  "symptoms".* FROM "symptoms"   ORDER BY symptoms.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "tags"
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags"   ORDER BY tags.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "piggybak_tax_methods"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_orders"[0m
+  [1m[35mPiggybak::Order Load (0.3ms)[0m  SELECT  "piggybak_orders".* FROM "piggybak_orders"   ORDER BY piggybak_orders.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_payment_methods"[0m
+  [1m[35mPiggybak::PaymentMethod Load (0.2ms)[0m  SELECT  "piggybak_payment_methods".* FROM "piggybak_payment_methods"   ORDER BY piggybak_payment_methods.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_countries"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax (35.4ms)
+Completed 200 OK in 72ms (Views: 52.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/admin/symptom?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:33:58 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"symptom"}
+  [1m[35mSymptom Load (2.0ms)[0m  SELECT  "symptoms".* FROM "symptoms"   ORDER BY symptoms.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "symptoms"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (31.8ms)
+Completed 200 OK in 44ms (Views: 36.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/admin/symptom/export" for 127.0.0.1 at 2014-11-15 22:34:01 -0500
+Processing by RailsAdmin::MainController#export as HTML
+  Parameters: {"model_name"=>"symptom"}
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/export.html.haml within layouts/rails_admin/application (15.0ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (0.9ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_navigation.html.haml (2.8ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/pjax.html.haml (4.8ms)
+Completed 200 OK in 353ms (Views: 346.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 22:34:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 22:34:02 -0500
+
+
+Started GET "/admin/?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:34:21 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "admin_users"
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"   ORDER BY admin_users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "categories"
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT  "categories".* FROM "categories"   ORDER BY categories.updated_at desc LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items"   ORDER BY items.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "piggybak_shipping_methods"
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_states"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "symptoms"
+  [1m[36mSymptom Load (0.3ms)[0m  [1mSELECT  "symptoms".* FROM "symptoms"   ORDER BY symptoms.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "tags"
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags"   ORDER BY tags.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "piggybak_tax_methods"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_orders"[0m
+  [1m[35mPiggybak::Order Load (0.3ms)[0m  SELECT  "piggybak_orders".* FROM "piggybak_orders"   ORDER BY piggybak_orders.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_payment_methods"[0m
+  [1m[35mPiggybak::PaymentMethod Load (0.2ms)[0m  SELECT  "piggybak_payment_methods".* FROM "piggybak_payment_methods"   ORDER BY piggybak_payment_methods.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_countries"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax (30.9ms)
+Completed 200 OK in 67ms (Views: 46.6ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/admin/?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:34:34 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "admin_users"
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"   ORDER BY admin_users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "categories"
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT  "categories".* FROM "categories"   ORDER BY categories.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items"   ORDER BY items.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "piggybak_shipping_methods"
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_states"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "symptoms"
+  [1m[36mSymptom Load (0.2ms)[0m  [1mSELECT  "symptoms".* FROM "symptoms"   ORDER BY symptoms.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "tags"
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags"   ORDER BY tags.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "piggybak_tax_methods"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_orders"[0m
+  [1m[35mPiggybak::Order Load (0.3ms)[0m  SELECT  "piggybak_orders".* FROM "piggybak_orders"   ORDER BY piggybak_orders.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_payment_methods"[0m
+  [1m[35mPiggybak::PaymentMethod Load (0.2ms)[0m  SELECT  "piggybak_payment_methods".* FROM "piggybak_payment_methods"   ORDER BY piggybak_payment_methods.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_countries"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax (32.7ms)
+Completed 200 OK in 67ms (Views: 48.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/admin/?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:34:49 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "admin_users"
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"   ORDER BY admin_users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "categories"
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT  "categories".* FROM "categories"   ORDER BY categories.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items"   ORDER BY items.updated_at desc LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "piggybak_shipping_methods"
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_states"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "symptoms"
+  [1m[36mSymptom Load (0.2ms)[0m  [1mSELECT  "symptoms".* FROM "symptoms"   ORDER BY symptoms.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "tags"
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags"   ORDER BY tags.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "piggybak_tax_methods"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_orders"[0m
+  [1m[35mPiggybak::Order Load (0.3ms)[0m  SELECT  "piggybak_orders".* FROM "piggybak_orders"   ORDER BY piggybak_orders.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_payment_methods"[0m
+  [1m[35mPiggybak::PaymentMethod Load (0.2ms)[0m  SELECT  "piggybak_payment_methods".* FROM "piggybak_payment_methods"   ORDER BY piggybak_payment_methods.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_countries"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax (30.2ms)
+Completed 200 OK in 63ms (Views: 45.3ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/admin/admin_user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:34:57 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"admin_user"}
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT  "admin_users".* FROM "admin_users"   ORDER BY admin_users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "admin_users"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (20.2ms)
+Completed 200 OK in 34ms (Views: 26.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:35:36 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "admin_users"
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"   ORDER BY admin_users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "categories"
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT  "categories".* FROM "categories"   ORDER BY categories.updated_at desc LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items"   ORDER BY items.updated_at desc LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "piggybak_shipping_methods"
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_states"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "symptoms"
+  [1m[36mSymptom Load (0.3ms)[0m  [1mSELECT  "symptoms".* FROM "symptoms"   ORDER BY symptoms.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "tags"
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags"   ORDER BY tags.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "piggybak_tax_methods"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_orders"[0m
+  [1m[35mPiggybak::Order Load (0.3ms)[0m  SELECT  "piggybak_orders".* FROM "piggybak_orders"   ORDER BY piggybak_orders.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_payment_methods"[0m
+  [1m[35mPiggybak::PaymentMethod Load (0.2ms)[0m  SELECT  "piggybak_payment_methods".* FROM "piggybak_payment_methods"   ORDER BY piggybak_payment_methods.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_countries"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax (31.3ms)
+Completed 200 OK in 65ms (Views: 46.4ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/admin/?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:35:41 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "admin_users"
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"   ORDER BY admin_users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "categories"
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT  "categories".* FROM "categories"   ORDER BY categories.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items"   ORDER BY items.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "piggybak_shipping_methods"
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_states"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "symptoms"
+  [1m[36mSymptom Load (0.3ms)[0m  [1mSELECT  "symptoms".* FROM "symptoms"   ORDER BY symptoms.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "tags"
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags"   ORDER BY tags.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "piggybak_tax_methods"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_orders"[0m
+  [1m[35mPiggybak::Order Load (0.3ms)[0m  SELECT  "piggybak_orders".* FROM "piggybak_orders"   ORDER BY piggybak_orders.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_payment_methods"[0m
+  [1m[35mPiggybak::PaymentMethod Load (0.2ms)[0m  SELECT  "piggybak_payment_methods".* FROM "piggybak_payment_methods"   ORDER BY piggybak_payment_methods.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_countries"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax (31.5ms)
+Completed 200 OK in 67ms (Views: 47.0ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/admin/?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:35:42 -0500
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "admin_users"
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"   ORDER BY admin_users.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "categories"
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT  "categories".* FROM "categories"   ORDER BY categories.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items"   ORDER BY items.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "piggybak_shipping_methods"
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_states"[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "symptoms"
+  [1m[36mSymptom Load (0.4ms)[0m  [1mSELECT  "symptoms".* FROM "symptoms"   ORDER BY symptoms.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "tags"
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT  "tags".* FROM "tags"   ORDER BY tags.updated_at desc LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "piggybak_tax_methods"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY users.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_orders"[0m
+  [1m[35mPiggybak::Order Load (0.3ms)[0m  SELECT  "piggybak_orders".* FROM "piggybak_orders"   ORDER BY piggybak_orders.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_payment_methods"[0m
+  [1m[35mPiggybak::PaymentMethod Load (0.2ms)[0m  SELECT  "piggybak_payment_methods".* FROM "piggybak_payment_methods"   ORDER BY piggybak_payment_methods.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "piggybak_countries"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax (41.4ms)
+Completed 200 OK in 78ms (Views: 57.1ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:36:20 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"   ORDER BY users.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (20.6ms)
+Completed 200 OK in 34ms (Views: 26.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/user/1?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:36:27 -0500
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user", "id"=>"1"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (5.9ms)
+Completed 200 OK in 22ms (Views: 15.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/user/1/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:36:37 -0500
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/_form_field.html.haml (1.1ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/_form_field.html.haml (2.6ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/_form_datetime.html.haml (2.4ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/_form_datetime.html.haml (1.0ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/_form_field.html.haml (1.6ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/_form_datetime.html.haml (1.4ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/_form_datetime.html.haml (2.0ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/_submit_buttons.html.haml (3.0ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (74.9ms)
+Completed 200 OK in 93ms (Views: 86.9ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/admin/user/1/edit" for 127.0.0.1 at 2014-11-15 22:36:53 -0500
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jN2caCQIDH2KEpyKchv9bCeK+IRIvHspoYwSAxvSlk0=", "user"=>{"email"=>"kimler@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]", "remember_created_at"=>"", "sign_in_count"=>"4", "current_sign_in_at"=>"November 15, 2014 13:30", "last_sign_in_at"=>"November 15, 2014 02:10", "current_sign_in_ip"=>"127.0.0.1", "last_sign_in_ip"=>"127.0.0.1", "f_name"=>"", "l_name"=>"", "alias"=>""}, "return_to"=>"http://localhost:3000/admin/user/1", "_continue"=>"", "model_name"=>"user", "id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/admin/user/1
+Filter chain halted as :check_for_cancel rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/user/1" for 127.0.0.1 at 2014-11-15 22:36:53 -0500
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"model_name"=>"user", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/application (5.0ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (1.0ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_navigation.html.haml (3.1ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/pjax.html.haml (5.2ms)
+Completed 200 OK in 346ms (Views: 339.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 22:36:54 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 22:36:54 -0500
+
+
+Started GET "/admin/item?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-15 22:36:58 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"item"}
+  [1m[35mItem Load (0.5ms)[0m  SELECT  "items".* FROM "items"   ORDER BY items.id desc LIMIT 20 OFFSET 0
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (3, 2)[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "items"
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (42.7ms)
+Completed 200 OK in 56ms (Views: 49.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/item/9/show_in_app" for 127.0.0.1 at 2014-11-15 22:37:11 -0500
+Processing by RailsAdmin::MainController#show_in_app as HTML
+  Parameters: {"model_name"=>"item", "id"=>"9"}
+  [1m[36mItem Load (2.0ms)[0m  [1mSELECT  "items".* FROM "items"  WHERE "items"."id" = 9  ORDER BY "items"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/items/9
+Completed 302 Found in 8ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/items/9" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = $1 LIMIT 1  [["id", 9]]
+  Rendered items/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 492ms (Views: 489.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/symptoms.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:12 -0500
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:13 -0500
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:13 -0500
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:13 -0500
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:13 -0500
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:13 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:13 -0500
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:13 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:13 -0500
+
+
+Started GET "/assets/symptoms.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:13 -0500
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:13 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:13 -0500
+
+
+Started GET "/admin/item" for 127.0.0.1 at 2014-11-15 22:37:18 -0500
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"item"}
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT  "items".* FROM "items"   ORDER BY items.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"  WHERE "categories"."id" IN (3, 2)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (39.1ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_secondary_navigation.html.haml (0.9ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/_navigation.html.haml (2.8ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/rails_admin-0.6.5/app/views/layouts/rails_admin/pjax.html.haml (4.2ms)
+Completed 200 OK in 369ms (Views: 357.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 475ms (Views: 474.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/symptoms.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:29 -0500
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/symptoms.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.8ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2014-11-15 22:37:30 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.7ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.4ms)
+
+
+Started GET "/protected.html" for 127.0.0.1 at 2014-11-15 22:37:43 -0500
+Processing by WelcomeController#index-protected as HTML
+  Rendered welcome/index-protected.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 490ms (Views: 489.7ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jN2caCQIDH2KEpyKchv9bCeK+IRIvHspoYwSAxvSlk0="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 473ms (Views: 472.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/symptoms.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:45 -0500
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:46 -0500
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:46 -0500
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:46 -0500
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:46 -0500
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:46 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:46 -0500
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:46 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:46 -0500
+
+
+Started GET "/assets/symptoms.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:46 -0500
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:46 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 22:37:46 -0500
+
+
+Started GET "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-15 22:37:46 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.woff"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.0ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.ttf" for 127.0.0.1 at 2014-11-15 22:37:46 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/twitter-bootstrap-static/twitter/fonts/glyphicons-halflings-regular.ttf"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/monkey/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.5ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/monkey/.rvm/gems/ruby-2.1.4/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.8ms)
