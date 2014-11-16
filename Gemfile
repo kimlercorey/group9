@@ -31,6 +31,7 @@ gem 'rails_12factor', group: :production
 gem 'rack-ssl-enforcer',group: :production
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'devise'
+gem 'rails_admin'
 
 gem 'carrierwave'
 gem 'rmagick'
