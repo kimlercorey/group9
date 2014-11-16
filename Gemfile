@@ -41,6 +41,7 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 #gem "meta_searchggybak"
 
 gem "piggybak"
+gem 'cancan'
 
 
 
