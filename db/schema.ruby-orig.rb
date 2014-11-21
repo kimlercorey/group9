@@ -24,26 +24,6 @@ ActiveRecord::Schema.define(version: 20141120022233) do
     t.text     "note"
   end
 
-  create_table "admin_users", id: false, force: true do |t|
-    t.integer  "id",                     null: false
-    t.string   "email2"
-    t.string   "f_name"
-    t.string   "l_name"
-    t.string   "alias"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "email",                  null: false
-    t.string   "encrypted_password",     null: false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.inet     "current_sign_in_ip"
-    t.inet     "last_sign_in_ip"
-  end
-
   create_table "categories", force: true do |t|
     t.string   "title"
     t.datetime "created_at"

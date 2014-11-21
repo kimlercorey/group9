@@ -1,0 +1,7 @@
+<h2> Your search returned <%= @results.to_a.count %> results</h2>
+
+<% @results.each do |result| %>
+  <%= link_to  result.details   , result %>
+<% end %>
+
+

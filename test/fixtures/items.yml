@@ -4,10 +4,12 @@ one:
   title: MyString
   details: MyText
   category_id: 1
+  price: 1.5
   image: MyString
 
 two:
   title: MyString
   details: MyText
   category_id: 1
+  price: 1.5
   image: MyString
