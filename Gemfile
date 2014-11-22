@@ -46,7 +46,7 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 gem 'devise'
 gem 'rails_admin'
 gem 'carrierwave'
-gem 'rmagick'
+gem 'rmagick', :require => 'RMagick'
 gem "piggybak"
 gem 'cancan'
 gem "pg_search"
