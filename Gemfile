@@ -50,5 +50,6 @@ gem 'rmagick'
 gem "piggybak"
 gem 'cancan'
 gem "pg_search"
+gem "fog"
 
 
