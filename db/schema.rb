@@ -11,10 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141120022233) do
+ActiveRecord::Schema.define(version: 20141122211421) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "unaccent"
 
   create_table "adjustments", force: true do |t|
     t.string   "source_type"
@@ -75,6 +76,14 @@ ActiveRecord::Schema.define(version: 20141120022233) do
 
   add_index "items_tags", ["item_id"], name: "index_items_tags_on_item_id", using: :btree
   add_index "items_tags", ["tag_id"], name: "index_items_tags_on_tag_id", using: :btree
+
+  create_table "pg_search_documents", force: true do |t|
+    t.text     "content"
+    t.integer  "searchable_id"
+    t.string   "searchable_type"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
 
   create_table "piggybak_addresses", force: true do |t|
     t.string   "firstname",  null: false

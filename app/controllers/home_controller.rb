@@ -1,7 +1,6 @@
 class HomeController < ApplicationController
 
   def search 
-    @results =Item.search_main(params[:q])
+    @results = PgSearch.multisearch(params[:q]).where(:searchable_type => "Item")
   end
-
 end

@@ -1,11 +1,13 @@
-<h2> Your search returned <%= @results.to_a.count %> results</h2>
+<h5 class="container"> <small>Search for</small> "<%= params[:q] %>" <small>returned</small> <%= @results.to_a.count %> <small>results<small></h5>
 
-<div class="sresult" >
-<% @results.each do |result| %>
-  <h3><%= link_to result.title, result %></h3>
-  <%= image_tag result.image, size: "64" %>
-  <h5><%= result.details %></h5>
-  <h4><%= link_to  "... go to " + result.title  , result %></h4>
+<div class="sresult table table-striped" >
+  <% @results.find_each do |document| %>
+  <div class="container search_result_item">
+  <h4 class="lead"><%= document.searchable.title%></h4>
+  <%= image_tag document.searchable.image, size: "64" %>
+  <p class=""><%= document.searchable.details %></p>
+  <p><%= link_to  "...more on " + document.searchable.title, document.searchable %> </p>
+  </div>
 <% end %>
 </div>
 
