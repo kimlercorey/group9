@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  devise_for :users
+  mount Piggybak::Engine => '/store/checkout', as: :piggybak
+
+  #mount PiggybakTaxonomy::Engine => '/store', :as => 'piggybak_taxonomy'
+  #mount PiggybakCoupons::Engine => '/store', :as => 'piggybak_coupons'
+  #mount PiggybakGiftcerts::Engine => '/store', :as => 'piggybak_giftcerts'
+  #mount PiggybakBundleDiscounts::Engine => '/store', :as => 'piggybak_bundle_discounts'
+
+  devise_for :users, :path => '/store/users'
   resources :symptoms
 
   resources :tags

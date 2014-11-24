@@ -20,8 +20,8 @@ RailsAdmin.config do |config|
     dashboard                     # mandatory
     index                         # mandatory
     new
-    export
-    bulk_delete
+    #export
+    #bulk_delete
     show
     edit
     delete
@@ -31,4 +31,13 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+
+
+
+
+
+
+
+
 end

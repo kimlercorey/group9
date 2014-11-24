@@ -16,6 +16,10 @@
   <dd><%= @item.image %></dd>
 </dl>
 
+<div id="cart_form">
+    <%= cart_form(@item) %>
+</div>
+
 <%= link_to t('.back', :default => t("helpers.links.back")),
               items_path, :class => 'btn btn-default'  %>
 <%= link_to t('.edit', :default => t("helpers.links.edit")),

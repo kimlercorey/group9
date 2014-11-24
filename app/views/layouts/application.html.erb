@@ -6,12 +6,23 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    .cart_light a { padding:5px; font-weight:bold; }
+    .cart_light a:link { color:#ffffff;}
+    .cart_light a:visited { color:#ffffff; }
+    .cart_light a:hover { color:#ffffff; }
+    .cart_light a:active { color:#f0f0f0;}
+</style>
+
 </head>
 <body>
 
   <nav class="navbar navbar-inverse" role="navigation">
-      <span class="cart">cart: <%= cart_link %> </span>    ...
+      <span class="cart btn-lg btn-info cart_light" style="float:right;" > <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> <%= cart_link %> </span> 
   </nav>
+
+
 
   <%= notice %>
   <%= alert %>
