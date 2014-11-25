@@ -19,7 +19,20 @@
 <body>
 
   <nav class="navbar navbar-inverse" role="navigation">
-      <span class="cart btn-lg btn-info cart_light" style="float:right;" > <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> <%= cart_link %> </span> 
+      
+      <span class="cart btn-lg btn-info cart_light" style="float:right;">
+      <% if current_user -%>
+        <%= link_to 'LOGOUT', main_app.destroy_user_session_path, :method => :delete, :class => "last" %>
+      <% else -%>
+         <%= link_to 'LOG IN', main_app.new_user_session_path %>
+      <% end -%>
+      </span>
+
+      <span class="cart btn-lg btn-info cart_light" style="float:right;" > <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> <%= cart_link %><%= orders_link("Order History") %> 
+      
+      
+
+      </span> 
   </nav>
 
 
