@@ -1,5 +1,7 @@
 == README
 
+[ ![Codeship Status for kimlercorey/group9](https://codeship.com/projects/de5496e0-57b0-0132-66c8-2aedc25d7739/status)](https://codeship.com/projects/49882)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
