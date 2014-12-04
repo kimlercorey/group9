@@ -1,23 +1,33 @@
 Rails.application.routes.draw do
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  mount Piggybak::Engine => '/store/checkout', as: :piggybak
+  mount RailsAdmin::Engine => '/admin', as: :rails_admin
+  mount Piggybak::Engine => '/user/checkout', as: :piggybak
 
   #mount PiggybakTaxonomy::Engine => '/store', :as => 'piggybak_taxonomy'
   #mount PiggybakCoupons::Engine => '/store', :as => 'piggybak_coupons'
   #mount PiggybakGiftcerts::Engine => '/store', :as => 'piggybak_giftcerts'
   #mount PiggybakBundleDiscounts::Engine => '/store', :as => 'piggybak_bundle_discounts'
 
-  devise_for :users, :path => '/store/users'
+  devise_for :users, :path => '/user/users'
   resources :symptoms
   resources :tags
   resources :categories
   resources :items
+
+#devise_scope :user do
+#    get "sign_in", to: "devise/sessions#new"
+#end
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'home#index'
+
+
+  get '/user' => 'home#index'
+  get '/user/users' => 'home#index'
+
   get 'search' => 'home#search'
 
   get 'loggedout' => 'home#loggedout', as: :loggedout_url
