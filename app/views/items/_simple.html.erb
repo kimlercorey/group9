@@ -1,3 +1,4 @@
+<!-- start simple view (_simple.html.erb) -->
 <style>
 
 .same_height {
@@ -34,9 +35,9 @@
     <div class="symptoms left" >
     <div class="title" >Used to address</div>
     <% simple.symptoms.all.each { |symp| %>
-	  <span class="label label-default" style="margin:2px;">
-        <%= symp.title %>
-      </span>
+    <span class="label label-default" style="margin:2px;">
+        <%= link_to(symp.title, symp, style: 'color:#FFFFFF;') %>
+    </span>
     <% } %>
     </div> 
     <br/> 
@@ -48,7 +49,7 @@
     <div class="title" >Other Benefits </div>
     <% simple.tags.all.each { |tag| %>
 	  <span class="label label-default" style="margin:2px;">
-        <%= tag.title %>
+    <%= link_to(tag.title, tag, style: 'color:#FFFFFF;') %>
       </span>
     <% } %>
     </div>
@@ -62,3 +63,4 @@
   </div>
 
 </div>
+<!-- end simple view -->
