@@ -1,17 +1,18 @@
 <div class="row">
   
 <p id="notice"><%= notice %></p>
-<div class="page-header"> Title: <%= @category.title %></div>
+<div class="page-header lead"> Category <%= @category.title %></div>
 
+<!-- show matching items -->
 <% @category.items.each do |item| %>
-
-
 <%= render partial: "items/simple", object: item  %>
-
 <% end %>
+
 </div>
 
+<!-- 
 <div class="bottom_nav">
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
 </div>
+-->

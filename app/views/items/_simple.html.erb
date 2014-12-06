@@ -1,17 +1,64 @@
-  <div class = "thumbnail col-sm-6 col-md-2">
+<style>
+
+.same_height {
+    display: table;
+}
+
+[class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+</style>
+
+  <div class = "thumbnail col-sm-6 col-md-2 same_height" style="padding: 10px;">
+    
+  <!-- Price, title and sku -->
     <%= image_tag simple.image_url.to_s, size:"100" %>
-    <h3 class="item_title"><%= simple.title %></h3>
-     <div class="id"><%= simple.piggybak_sellable.sku rescue " " %></div>:wq
-    <p class=""><%= truncate(simple.details, length: 150, separator: ' ', omission: '... (continued)') %></p>
-    <div class="price"> <%= simple.price%> <%= "item price" %></div>
-   
-
-    <div class="Symptom">
-    		<span class="label label-default">Symptoms</span>
+    <div class="top-lines">
+      <div class="item_title lead left" ><%= simple.title %></div>
+      <div class="sku left"><%= simple.piggybak_sellable.sku rescue " " %></div>  
+      <div class="price lead right" > <%= simple.price%> <%= "item price" %></div>
     </div>
 
-    <div class="tag">
-            <span class="label label-default">Other</span>
+    <!-- Item details paragraph -->
+    <div class="text left" style="margin-bottom: 10px; margin-top: 10px; ">
+    <%= truncate(simple.details, 
+                  :length => 150, 
+                  :omission => '...') { link_to('[more]',simple) } 
+    %>
     </div>
-  
+    
+    <!-- Symptoms -->
+    <% if simple.symptoms.count > 0 %>
+    <div class="symptoms left" >
+    <div class="title" >Used to address</div>
+    <% simple.symptoms.all.each { |symp| %>
+	  <span class="label label-default" style="margin:2px;">
+        <%= symp.title %>
+      </span>
+    <% } %>
+    </div> 
+    <br/> 
+    <%end%>
+
+    <!-- Benefits 7 other information: (Tags) -->
+    <% if simple.tags.count > 0 %>
+    <div class="tags left" >
+    <div class="title" >Other Benefits </div>
+    <% simple.tags.all.each { |tag| %>
+	  <span class="label label-default" style="margin:2px;">
+        <%= tag.title %>
+      </span>
+    <% } %>
+    </div>
+    <%end%>
+ 
+  <!-- Link to item -->
+  <div class="btn btn-default glyphicon glyphicon-hand-up btn-primary" style="margin:2px; float: right;">
+  <%= link_to(simple, style: 'color:#FFFFFF;') do %> 
+  View <%= simple.title %> details
+  <% end %>
   </div>
+
+</div>
