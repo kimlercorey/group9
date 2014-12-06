@@ -40,7 +40,13 @@
   <%= notice %>
   <%= alert %>
 
+<div id="content" style="margin-left:25px;margin-right:25px;">
 <%= yield %>
+
+
+<%= render partial: "layouts/footer" %>
+
+</div>
 
 </body>
 </html>
