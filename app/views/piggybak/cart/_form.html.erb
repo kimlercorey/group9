@@ -2,17 +2,29 @@
 	<% if object.piggybak_sellable && object.piggybak_sellable.active -%>
 		<% if object.piggybak_sellable.quantity > 0 || object.piggybak_sellable.unlimited_inventory -%>
 			<%= form_tag piggybak.cart_add_url, locals[:options] do -%>
+			
 			<div id="sellable_details">
-			<span id="title"><%= object.piggybak_sellable.description %></span>
+			<%if object.piggybak_sellable.unlimited_inventory %>
+			  <span class="label label-success">in-stock</span>
+			<% else %>
+			  <span class="label label-warning"> Only <%=object.piggybak_sellable.quantity %> left </span>
+			<% end %>
+			
+
+
+
+			<span id="title" style="margin-left: 10px;"><%= object.piggybak_sellable.description %></span>
 			<span id="price"><%= number_to_currency object.piggybak_sellable.price %></span>
-			</div>
-			<label>Qty</label>
-			<%= text_field_tag :quantity, "1" %>
+			
+			
 			<%= hidden_field_tag :sellable_id, object.piggybak_sellable.id %>
-			<%= submit_tag "Add to Cart", :id => "submit" %>
+			<%= submit_tag "Add to Cart", :id => "submit", class: "btn btn-primary" %>
+			<label >Qty</label> <%= text_field_tag :quantity, "1", size: "3" %>
+
+			</div>
 			<% end -%>
 			<% else -%>
-			Sorry, out of stock.
+			 <span class="label label-error">Sorry, out of stock.</span>
 		<% end -%>
 	<% end -%>
 <% end -%>
