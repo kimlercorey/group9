@@ -1,0 +1,17 @@
+  <div class = "thumbnail col-sm-6 col-md-2">
+    <%= image_tag simple.image_url.to_s, size:"100" %>
+    <h3 class="item_title"><%= simple.title %></h3>
+     <div class="id"><%= simple.piggybak_sellable.sku rescue " " %></div>:wq
+    <p class=""><%= truncate(simple.details, length: 150, separator: ' ', omission: '... (continued)') %></p>
+    <div class="price"> <%= simple.price%> <%= "item price" %></div>
+   
+
+    <div class="Symptom">
+    		<span class="label label-default">Symptoms</span>
+    </div>
+
+    <div class="tag">
+            <span class="label label-default">Other</span>
+    </div>
+  
+  </div>

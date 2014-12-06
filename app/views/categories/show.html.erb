@@ -4,13 +4,9 @@
 <div class="page-header"> Title: <%= @category.title %></div>
 
 <% @category.items.each do |item| %>
-  <div class = "thumbnail col-sm-6 col-md-2">
-    <%= image_tag item.image_url.to_s, size:"100" %>
-    <h3 class="item_title"><%= item.title %></h3>
-    <p class=""><%= truncate(item.details, length: 50, separator: ' ', omission: '... (continued)') %></p>
-    <div class="price"> <%= "item price" %></div>
-    <div class="id"><%= "item id" %></div>
-  </div>
+
+
+<%= render partial: "items/simple", object: item  %>
 
 <% end %>
 </div>

@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   #mount PiggybakGiftcerts::Engine => '/store', :as => 'piggybak_giftcerts'
   #mount PiggybakBundleDiscounts::Engine => '/store', :as => 'piggybak_bundle_discounts'
 
+  get '/user/users' => 'home#index'
   devise_for :users, :path => '/user/users'
   resources :symptoms
   resources :tags
@@ -25,8 +26,6 @@ Rails.application.routes.draw do
   root 'home#index'
 
 
-  get '/user' => 'home#index'
-  get '/user/users' => 'home#index'
 
   get 'search' => 'home#search'
 
