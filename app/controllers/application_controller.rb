@@ -7,8 +7,11 @@ class ApplicationController < ActionController::Base
   before_filter :set_last_page
 
   def set_last_page
-    if !request.xhr? && !request.url.match(/sign_in/) && !request.url.match(/sign_out/) && !request.url.match(/password/)
+    if !request.xhr? && !request.url.match(/sign_in/) && !request.url.match(/sign_out/)
       session[:return_to] = request.url
+
+      session[:return_to] = root_url if request.url.match(/password/)
+
     end
   end
 
