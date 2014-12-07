@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
 
   get '/user/users' => 'home#index'
+  get '/user' => 'home#index'
 
   devise_for :users, :path => '/user/users'
 
