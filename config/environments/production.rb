@@ -10,8 +10,7 @@ Rails.application.configure do
   :authentication => :plain,
   :user_name      => ENV['MG_USER_NAME'],
   :password       => ENV['MG_PASSWORD'],
-  :domain         => ENV['MG_DOMAIN'],
-  :enable_starttls_auto => true
+  :domain         => ENV['MG_DOMAIN']
 }
 
   config.action_mailer.delivery_method = :smtp
