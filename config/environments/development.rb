@@ -9,14 +9,30 @@ Rails.application.configure do
 # this will start mailcatcher with smtp://127.0.0.1:1025 web interface at http://127.0.0.1:1080
 # using the setting below to view all mailsent with web pointed to http://localhost:1080
 # cool - right?
+
+# as mailcatcher use the following
+#ActionMailer::Base.smtp_settings = {
+#  :address        => "127.0.0.1",
+#  :port           => "1025",
+#  :authentication => :plain,
+#  :user_name      => "",
+#  :password       => "",
+#  :domain         => ""
+#}
+
+# as mailgun - use the following
 ActionMailer::Base.smtp_settings = {
-  :address        => "127.0.0.1",
-  :port           => "1025",
+  :address        => "smtp.mailgun.org",
+  :port           => "587",
   :authentication => :plain,
-  :user_name      => "",
-  :password       => "",
-  :domain         => ""
+  :user_name      => ENV['MG_USER_NAME'],
+  :password       => ENV['MG_PASSWORD'],
+  :domain         => ENV['MG_DOMAIN'],
+  :enable_starttls_auto => true
 }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development

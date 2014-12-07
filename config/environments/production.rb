@@ -4,6 +4,19 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'herbsonline.herokuapp.com', port: 443 }
 
+  ActionMailer::Base.smtp_settings = {
+  :address        => "smtp.mailgun.org",
+  :port           => "587",
+  :authentication => :plain,
+  :user_name      => ENV['MG_USER_NAME'],
+  :password       => ENV['MG_PASSWORD'],
+  :domain         => ENV['MG_DOMAIN'],
+  :enable_starttls_auto => true
+}
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
