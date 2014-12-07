@@ -35,6 +35,7 @@ end
 
   get 'search' => 'home#search'
   get 'loggedout' => 'home#loggedout', as: :loggedout_url
+  get 'forced_loggedout' => 'home#forced_loggedout', as: :forced_loggedout_url
 
 
 

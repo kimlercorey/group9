@@ -32,6 +32,8 @@ html, body { height: 100%; }
 
 </style>
 
+
+
 </head>
 <body>
 
@@ -59,15 +61,28 @@ html, body { height: 100%; }
 
   </nav>
 
+<input id="user_activity" name="user_activity"  type="hidden" value="active" />
+<input id="user_logged_in" name="user_logged_in" type="hidden" value="true" /> 
+<input id="timer" name="timer" type="hidden" value="0" /> 
+<input id="countdown" name="countdown"  type="hidden" value="30" /> 
+<!-- type="hidden" -->
+
   <!-- show cart when appropriate (i.e. not in the cart or order process itself) -->
+  <span id="cart_span">
   <% if ( cart_link.to_s.length != 0 )  %>
   <div class="btn btn-info cart_light" style="float: right; color: #fff; margin-right: 10px;">Cart: <%= cart_link %></div>
   <% end %>
+  </span>
 
-  <%= notice %>
-  <%= alert %>
+<% if flash[:notice] -%>
+  <div class = "alert alert-success"><%= notice %></div>
+<% end %>
 
-<!-- BREADCRUMBS (http://joshhuckabee.com/simple-breadcrumb-ruby-rails) -->
+<% if flash[:alert] -%>
+  <div class = "alert alert-danger"><%= alert %></div>
+<% end %>  
+
+<!-- BREADCRUMBS (based on http://joshhuckabee.com/simple-breadcrumb-ruby-rails) -->
 <ol class="breadcrumb">
   <li><a href="/">home</a></li>        
 <%=
@@ -107,15 +122,141 @@ raw(s)
 
 <!-- end breadcrumbs -->
 
+<!-- Small modal -->
 
+
+<div id="stale_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+  <div class="modal-content">
+
+<div class="row-fluid">
+
+  <div class="modal-header">
+    <button type="button" class="close inactivity_bye" data-dismiss="modal" aria-hidden="true">&times;</button>
+  </div>
+    
+      <div id="custom_alert_message" class="span12" style="padding: 20px; padding-bottom: 30px; ">
+      Did you leave? When you become inactive, we think you might have left with items in your cart. If you want to keep the cart with the items in it, click OK. If you changed your mind about the items, click X and we'll put the items back for another customer. 
+
+      If you are gone, we'll go ahead and log you out ( which will also return the items in the cart back into the mish-mash for other customers). 
+
+      Regards,
+      Group9
+       </div>
+    
+    <div class="modal-footer">
+        <a href="javascript:void(0)" class="btn btn-info inactivity_ok" data-dismiss="modal" aria-hidden="true">O.K</a>
+    </div>
+
+    </div>
+    
+
+    </div>
+  </div>
+</div>
+
+
+<!-- end popup warning -->
 
 <div id="content" style="margin-left:25px;margin-right:25px;">
 <%= yield %>
-
-
 <%= render partial: "layouts/footer" %>
 
 </div>
+
+<!-- TODO: Move js inactivity check to a nice and tidy partial -->
+<script>
+
+// starts the intervals and watches 
+    window.onload = reset_timers;
+    document.onmousemove = reset_timers;
+    document.onkeypress = reset_timers;
+    
+    // user_timer interval that moves tick
+    // inactivity_timer will trigger logout and inactivity
+    var user_timer = 0;
+    var inactivity_timer = 0;
+    var tick = 0;
+
+    var inactivity_delta = 60; // in seconds - start countdown to popup
+    var inactivity_max_tick = 120; //in seconds
+    var time_to_respond_before_force_logout = 120; //in seconds
+
+    // only perform this for logged in (which is the js not actually the session .. todo)
+    var user_logged_in = $("#user_logged_in").val();
+
+    // targeting 1000 as 1 sec although it varies between systems
+    if( $("#cart_span").html().length > 5){
+    set_intervals = function(){
+      user_timer = setInterval(function(){ tick += 1; $("#timer").val(tick); frame(); }, 1000);
+    }  
+    }
+    
+    function frame(){
+      //console.log("User logged in? " + user_logged_in );
+      //console.log( $("#cart_span").html().length );
+
+      // Only perform this when there is a cart span with content 
+      if( $("#cart_span").html().length > 5){
+        if (tick > inactivity_max_tick) {
+            if ($("#user_activity").val() == "active") { 
+              $("#user_activity").val("inactive"); }
+            else {
+               $("#countdown").val( inactivity_delta+inactivity_max_tick-tick);
+               $("span#cart_span div.btn.btn-info.cart_light").css({"background-color": '#FFD700'});
+            }
+        }
+
+      //console.log( "Countdown: " + (($("#countdown").val() > 1) ? "ok" : "fire"))
+      
+      // Popup the warning window so user can save their session or abandon
+      if (parseInt($("#countdown").val()) < 1) { 
+          $("span#cart_span div.btn.btn-info.cart_light").css({"background-color": '#B22222'});
+          $("#stale_modal").modal({ toggle: true, show: true });
+      }
+
+      force_out = parseInt(time_to_respond_before_force_logout) +  parseInt($("#countdown").val());
+      
+      //console.debug( "count down to logout:" +  force_out );
+        if (force_out < 1 ) {
+             window.location = "/forced_loggedout";     
+        }        
+      
+      } 
+    }
+
+    // Activity was detected so stick around and watch
+    //
+    // TODO: add <span id="cart_span" style="hidden">Destroy cart on inactivity</span> 
+    //       to any pages that do not have the cart help but are actually the cart itself
+    //       to have this script remove them from the session.
+    //         
+    function reset_timers(){
+
+     if( $("#cart_span").html().length > 5){      
+        tick =0; $("#user_activity").val("active") ;
+        $("#countdown").val(time_to_respond_before_force_logout);
+        $("span#cart_span div.btn.btn-info.cart_light").css({"background-color": '#90EE90'});
+        clearInterval(user_timer);
+        set_intervals();
+      } else {
+        /* nothing... yet. Should add some clean-up here. */
+      }
+    }
+
+    // Modal 'ok' was clicked so redeem active state on cart
+    $(".inactivity_ok").click(function(){
+        tick=0; $("#user_activity").val("active") ;
+        clearInterval(user_timer);
+    });
+
+    // Modal 'x' was clicked so abandon the session
+    $(".inactivity_bye").click(function(){
+        window.location = "/forced_loggedout";  
+    });
+
+
+</script>
 
 </body>
 </html>

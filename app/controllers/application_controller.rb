@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
 
 
     end
-
+    
     request.url.to_s
   end
 
@@ -27,6 +27,8 @@ class ApplicationController < ActionController::Base
  end
 
   def after_sign_out_path_for(user)
+   cookies["cart"] = { :value => '', :path => '/' } 
+   flash[:notice] = "Your cart has been abandoned."
    session[:return_to] || :loggedout_url
   end
 
