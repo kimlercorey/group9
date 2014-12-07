@@ -1,30 +1,33 @@
 <% if object.respond_to?(:piggybak_sellable) -%>
-	<% if object.piggybak_sellable && object.piggybak_sellable.active -%>
-		<% if object.piggybak_sellable.quantity > 0 || object.piggybak_sellable.unlimited_inventory -%>
-			<%= form_tag piggybak.cart_add_url, locals[:options] do -%>
-			
+
+<%= form_tag piggybak.cart_add_url, locals[:options] do -%>
 			<div id="sellable_details">
-			<%if object.piggybak_sellable.unlimited_inventory %>
-			  <span class="label label-success">in-stock</span>
+<%= form_tag piggybak.cart_add_url, locals[:options] do -%>
+	<% if object.piggybak_sellable && object.piggybak_sellable.active -%>
+			<div id="sellable_details">
+			<% if object.piggybak_sellable.quantity > 0 || object.piggybak_sellable.unlimited_inventory -%>
+			  
+			  <%if object.piggybak_sellable.unlimited_inventory %>
+			    <span class="label label-success">in-stock</span>
+			  <% else %>
+			    <span class="label label-warning"> Only <%=object.piggybak_sellable.quantity %> left </span>
+			  <% end %>
+
 			<% else %>
-			  <span class="label label-warning"> Only <%=object.piggybak_sellable.quantity %> left </span>
+				<span class="label label-danger">Sorry, out of stock.</span>
 			<% end %>
-			
-
-
 
 			<span id="title" style="margin-left: 10px;"><%= object.piggybak_sellable.description %></span>
 			<span id="price"><%= number_to_currency object.piggybak_sellable.price %></span>
-			
-			
 			<%= hidden_field_tag :sellable_id, object.piggybak_sellable.id %>
 			<%= submit_tag "Add to Cart", :id => "submit", class: "btn btn-primary" %>
 			<label >Qty</label> <%= text_field_tag :quantity, "1", size: "3" %>
-
-			</div>
-			<% end -%>
-			<% else -%>
-			 <span class="label label-error">Sorry, out of stock.</span>
-		<% end -%>
+	<% else -%>		
+			<span class="label label-danger">Sorry, item not avalable.</span>
+			<span id="title" style="margin-left: 10px;">This item is no longer active and sellable</span>
+			<%= submit_tag "Add to Cart", :id => "submit", class: "btn btn-primary disabled" %>
 	<% end -%>
+			</div>
+<% end -%>
+<% end -%>
 <% end -%>
