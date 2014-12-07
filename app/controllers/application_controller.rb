@@ -10,9 +10,16 @@ class ApplicationController < ActionController::Base
     if !request.xhr? && !request.url.match(/sign_in/) && !request.url.match(/sign_out/)
       session[:return_to] = request.url
 
+      #send user to homepage if they tried to hit any of the protected password pages
       session[:return_to] = root_url if request.url.match(/password/)
 
+      #send user to homepage if they logout from the loggedout page
+      session[:return_to] = root_url if request.url.match(/loggedout/) 
+
+
     end
+
+    request.url.to_s
   end
 
  def after_sign_in_path_for(user)
