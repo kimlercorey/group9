@@ -51,11 +51,52 @@ html, body { height: 100%; }
 
       </span> 
   </nav>
-
-
-
   <%= notice %>
   <%= alert %>
+
+<!-- BREADCRUMBS (http://joshhuckabee.com/simple-breadcrumb-ruby-rails) -->
+
+
+<ol class="breadcrumb">
+  <li><a href="/">home</a></li>        
+<%=
+s = ""
+url = request.path.split('?')  #remove extra query string parameters
+levels = url[0].split('/') #break up url into different levels
+
+#add tagname if it exists
+levels[levels.length-1]=Tag.find(levels[2]).title if levels.length > 2 && levels[1]=="tags"  
+
+#add symptoms if it exists
+levels[levels.length-1]=Symptom.find(levels[2]).title if levels.length > 2 && levels[1]=="symptoms"  
+
+#add items if it exists
+levels[levels.length-1]=Item.find(levels[2]).title if levels.length > 2 && levels[1]=="items"  
+
+levels.each_with_index do |level, index|
+  unless level.blank?
+    if index == levels.size-1 || 
+       (level == levels[levels.size-2] && levels[levels.size-1].to_i > 0)
+      s += "<li>#{level.gsub(/_/, ' ')}</li>\n" unless level.to_i > 0
+    else
+        link = "/"
+        i = 1
+        while i <= index
+          link += "#{levels[i]}/"
+          i+=1
+        end
+        s += "<li><a href=\"#{link}\">#{level.gsub(/_/, ' ')}</a></li>\n" if (level != "user") and (level != "checkout") 
+    end
+  end
+end
+raw(s)
+-%>
+</ol>
+
+
+<!-- end breadcrumbs -->
+
+
 
 <div id="content" style="margin-left:25px;margin-right:25px;">
 <%= yield %>
