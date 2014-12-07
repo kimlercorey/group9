@@ -1,4 +1,17 @@
-<h1>Listing tags</h1>
+<h1>Browse by Benefit & Other Information</h1>
+
+
+<% @tags.each do |tag| %>
+
+<span class="btn btn-primary" style="margin:2px;">
+        <%= link_to( "(#{tag.items.count} products) #{tag.title}", tag, style: 'color:#FFFFFF;') %>
+</span>
+
+
+
+    <% end %>
+
+<!--
 
 <table>
   <thead>
@@ -10,6 +23,10 @@
 
   <tbody>
     <% @tags.each do |tag| %>
+    <%= link_to 'Show', tag %>
+
+
+
       <tr>
         <td><%= tag.title %></td>
         <td><%= link_to 'Show', tag %></td>
@@ -23,3 +40,4 @@
 <br>
 
 <%= link_to 'New Tag', new_tag_path %>
+-->

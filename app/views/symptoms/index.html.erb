@@ -1,3 +1,18 @@
+<h1>Browse by Symptoms</h1>
+
+
+<% @symptoms.each do |symptom| %>
+
+<span class="btn btn-primary" style="margin:2px;">
+        <%= link_to( "(#{symptom.items.count} products) #{symptom.title}", symptom, style: 'color:#FFFFFF;') %>
+</span>
+
+<% end %>
+
+
+
+
+<!--
 <h1>Listing symptoms</h1>
 
 <table>
@@ -23,3 +38,4 @@
 <br>
 
 <%= link_to 'New Symptom', new_symptom_path %>
+-->
