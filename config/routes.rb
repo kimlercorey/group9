@@ -7,17 +7,22 @@ Rails.application.routes.draw do
   #mount PiggybakGiftcerts::Engine => '/store', :as => 'piggybak_giftcerts'
   #mount PiggybakBundleDiscounts::Engine => '/store', :as => 'piggybak_bundle_discounts'
 
+
   get '/user/users' => 'home#index'
+
   devise_for :users, :path => '/user/users'
+
   resources :symptoms
   resources :tags
   resources :categories
   resources :items
 
-#devise_scope :user do
+devise_scope :user do
 #    get "sign_in", to: "devise/sessions#new"
-#end
 
+end
+
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -28,7 +33,6 @@ Rails.application.routes.draw do
 
 
   get 'search' => 'home#search'
-
   get 'loggedout' => 'home#loggedout', as: :loggedout_url
 
 

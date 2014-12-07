@@ -2,7 +2,21 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   config.serve_static_assets = true
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'localhost', port: 5000 }
+
+# Current mailing testing uses mailcatcher
+# After running 'gem install mailcatcher', run mailcatcher
+# this will start mailcatcher with smtp://127.0.0.1:1025 web interface at http://127.0.0.1:1080
+# using the setting below to view all mailsent with web pointed to http://localhost:1080
+# cool - right?
+ActionMailer::Base.smtp_settings = {
+  :address        => "127.0.0.1",
+  :port           => "1025",
+  :authentication => :plain,
+  :user_name      => "",
+  :password       => "",
+  :domain         => ""
+}
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
@@ -17,7 +31,7 @@ Rails.application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
