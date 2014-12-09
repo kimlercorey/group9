@@ -178,9 +178,9 @@ raw(s)
     var inactivity_timer = 0;
     var tick = 0;
 
-    var inactivity_delta = 60; // in seconds - start countdown to popup
-    var inactivity_max_tick = 120; //in seconds
-    var time_to_respond_before_force_logout = 120; //in seconds
+    var inactivity_delta = 30; // in seconds - start countdown to popup
+    var inactivity_max_tick = 20; //in seconds
+    var time_to_respond_before_force_logout = 10; //in seconds
 
     // only perform this for logged in (which is the js not actually the session .. todo)
     var user_logged_in = $("#user_logged_in").val();
