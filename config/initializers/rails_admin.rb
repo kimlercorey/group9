@@ -14,7 +14,7 @@ RailsAdmin.config do |config|
   ## == PaperTrail ==
   # config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0
 
-  config.email_sender = 'Herb Online (no-reply) <kimler+herbonline@gmail.com>'
+  config.email_sender 'Herb Online (no-reply) <kimler+herbonline@gmail.com>'
 
 
 
