@@ -1,4 +1,4 @@
-<div id="payment">
+<div id="payment" class="col-lg-4">
 	<h3>Payment</h3>
 	<%= f.fields_for :line_items, @order.line_items.detect { |li| li.line_item_type == "payment" } do |line_item_f| %>
 		<%= line_item_f.hidden_field :line_item_type, { :value => "payment" } %>
@@ -40,3 +40,4 @@
 		<% end -%>
 	<% end -%>
 </div>
+

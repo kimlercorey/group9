@@ -1,32 +1,53 @@
-<div id="checkout">
-	<h1>Checkout</h1>
+<style>
+	.container {background-color: #9ff; }
+	.col-lg-4 {max-width: 400px;}
+    #content {max-width: 1100px;}
+
+</style>
+
+
+<h1>Checkout</h1>
+
+	<div class="content">
 	<%= form_for @order, :url => piggybak.orders_url, :method => "POST" do |f| %>
 	<% if @order.errors.any? -%>
-	<div id="checkout_error">
+	<div id="checkout_error" class="row">
 	<b>You have errors with your submission:</b><br />
 	<%= raw @order.errors.full_messages.collect { |b| b.gsub(/^Line items payment/, 'Payment').gsub(/^Line items shipment shipping/, 'Shipping') }.join("<br />") %>
 	</div>
 	<% end -%>
 	<div class="clear"></div>
 
+
+    <div class="row">
 	<%= render "user_details", :f => f %>	
 	<%= render "billing_address", :f => f %>
 	<%= render "shipping_address", :f => f %>
+	</div>
+
+    <div class="row">
 
 	<div id="add_details">
 		<%= render "shipping", :f => f %>
 		<%= render "payment", :f => f %>
-		<div id="submit">
-		<%= f.submit %>
-		</div>
+		
 	</div>
+	</div>
+
+
+	<div 
+	<div id="submit" style="margin: 50px;"> <%= f.submit 'Place order', :class => 'btn btn-success '%> </div>
+	</div>
+
 	<% end -%>
 
-	<div id="totals_section">
+    
+	<div id="totals_section" style="margin-top: 50px; max-width: 1200px; margin-left: 40px;" >
 		<h3>Totals</h3>
-		<%= render "piggybak/cart/items", :page => "checkout" %>
+		<%= render "piggybak/cart/items", :page => "checkout"%>
 	</div>
-</div>
+    
+  </div>  </div>
 
 <script type="text/javascript">
 var shipping_lookup = "<%= piggybak.orders_shipping_url %>"; 
@@ -38,3 +59,4 @@ var previous_shipping = <%= params[:piggybak_order][:shipments_attributes]["0"][
 var previous_shipping = "";
 <% end -%>
 </script>
+

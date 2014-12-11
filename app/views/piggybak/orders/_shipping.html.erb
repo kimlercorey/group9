@@ -1,14 +1,5 @@
-<div id="shipping" data-no-turbolink>
+<div id="shipping" class="col-lg-4" data-no-turbolink>
   <h3>Shipping Option</h3>
-
-
-<!--
-  <select id="order_line_items_attributes_0_shipment_attributes_shipping_method_id" name="order[line_items_attributes][0][shipment_attributes][shipping_method_id]" style="display: inline-block;" class="valid">
-  <option value="1">Will Call (in-person pickup) [FREE]</option>
-  <option value="2">Fast [$$$]</option>
-  </select>
--->
-
 	<%= f.fields_for :line_items, @order.line_items.detect { |li| li.line_item_type == "shipment" } do |line_item_f| %>
 		<%= line_item_f.hidden_field :line_item_type, { :value => "shipment" } %>
 		<%= line_item_f.fields_for :shipment do |shipment| %>
@@ -20,8 +11,8 @@
 			<div id="shipping_spinner" style="display:none;">
 				<%= image_tag "ajax-loader.gif" %>
 			</div>
-			<div id="shipping_default" style="display:none;">
-				Please enter a shipping address.
+			<div id="shipping_default" style="display:none;" >
+				<span class="danger">Please enter a shipping address.</span>
 			</div>
 			<div id="shipping_empty" style="display:none;">
 				No shipping methods found.
@@ -30,4 +21,4 @@
 		<% end -%>
   <% end -%>
 
-</div>
+</div></div>
