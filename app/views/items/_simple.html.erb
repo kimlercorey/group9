@@ -23,21 +23,22 @@
     </div>
 
     <!-- Item details paragraph -->
-    <div class="text left" style="margin-bottom: 10px; margin-top: 10px; ">
+    <p class="text left" style="margin-bottom: 10px; margin-top: 10px; ">
     <%= truncate(simple.details, 
                   :length => 150, 
-                  :omission => '...') { link_to('[more]',simple) } 
+                  :omission => '...') { link_to(raw('<em>[more]</em>'),simple) } 
     %>
-    </div>
+
+    </p>
     
     <!-- Symptoms -->
     <% if simple.symptoms.count > 0 %>
     <div class="symptoms left" >
     <div class="title" >Used to address</div>
     <% simple.symptoms.all.each { |symp| %>
-    <span class="label label-default" style="margin:2px;">
-        <%= link_to(symp.title, symp, style: 'color:#FFFFFF;') %>
-    </span>
+      <a href="<%= url_for(symp) %>" type="button" class="label label-default" style="margin:2px; color:#FFFFFF;">
+        <%= symp.title %>
+      </a>
     <% } %>
     </div> 
     <br/> 
@@ -48,19 +49,15 @@
     <div class="tags left" >
     <div class="title" >Other Benefits </div>
     <% simple.tags.all.each { |tag| %>
-	  <span class="label label-default" style="margin:2px;">
-    <%= link_to(tag.title, tag, style: 'color:#FFFFFF;') %>
-      </span>
+      <a href="<%= url_for(tag) %>" type="button" class="label label-default" style="margin:2px; color:#FFFFFF;">
+        <%= tag.title %>
+      </a>
     <% } %>
     </div>
     <%end%>
  
   <!-- Link to item -->
-  <div class="btn btn-default glyphicon glyphicon-hand-up btn-primary" style="margin:2px; float: right;">
-  <%= link_to(simple, style: 'color:#FFFFFF;') do %> 
-  View <%= simple.title %> details
-  <% end %>
-  </div>
+  <a href="<%= url_for(simple)%>" class="btn btn-default btn-primary" style="float: right; color:#FFFFFF;" type="button"> <span>View <%= simple.title %> details</span> </a>
 
 </div>
 <!-- end simple view -->

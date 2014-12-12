@@ -2,43 +2,11 @@
   <h1><%=t '.title', :default => "Browse by Symptoms" %></h1>
 </div>
 
-
-
 <% @symptoms.each do |symptom| %>
 
-<span class="btn btn-primary" style="margin:2px;">
-        <%= link_to( "(#{symptom.items.count} products) #{symptom.title}", symptom, style: 'color:#FFFFFF;') %>
-</span>
+
+<%= link_to( "<button class='btn btn-primary' > (#{symptom.items.count} products) #{symptom.title} </button>".html_safe, symptom, style: 'color:#FFFFFF; margin:2px;' ) %>
+
+
 
 <% end %>
-
-
-
-
-<!--
-<h1>Listing symptoms</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @symptoms.each do |symptom| %>
-      <tr>
-        <td><%= symptom.title %></td>
-        <td><%= link_to 'Show', symptom %></td>
-        <td><%= link_to 'Edit', edit_symptom_path(symptom) %></td>
-        <td><%= link_to 'Destroy', symptom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Symptom', new_symptom_path %>
--->

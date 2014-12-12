@@ -3,7 +3,11 @@
 </div>
 
 <% @categories.each do |category| %>
-  <span class="btn btn-primary" style="margin:2px;">
-        <%= link_to( "(#{category.items.count} products) #{category.title}", category, style: 'color:#FFFFFF;') %>
-  </span>
+
+	<%= link_to( "<button class='btn btn-primary'> (#{category.items.count} products) #{category.title} </button>".html_safe, #link
+		category,
+		style: 'color:#FFFFFF; margin:2px;'
+	) %>
+
+
 <% end %>

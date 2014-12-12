@@ -42,23 +42,26 @@ html, body { height: 100%; }
       
       <% if current_user -%>
         
-        <span class="cart btn-lg btn-info cart_light" style="float:right; margin-right: 10px;" >
-        <%= link_to 'LOGOUT', main_app.destroy_user_session_path, :method => :delete, :class => "last" %>
-        </span>
+      <%= link_to("<button class='cart btn-lg btn-info cart_light'> Logout </button>".html_safe, #link
+          main_app.destroy_user_session_path, :method => :delete,
+          style: 'float:right; margin-right: 10px;'
+      ) %>
 
-        <span class="cart btn-lg btn-info cart_light" style="float:right; margin-right: 10px;" > 
-          <%= orders_link("Order History") %> 
-        </span>
+   
+      <%= link_to("<button class='cart btn-lg btn-info cart_light'> Order History </button>".html_safe, #link
+          piggybak.orders_list_url,
+          style: 'float:right; margin-right: 10px;'
+      ) %>
 
       <% else -%>
-         <span class="cart btn-lg btn-info cart_light" style="float:right; margin-right: 10px;">
-           <%= link_to 'LOG IN', main_app.new_user_session_path %>
-         </span>
+
+      <%= link_to("<button class='cart btn-lg btn-info cart_light'> Login </button>".html_safe, #link
+          main_app.new_user_session_path,
+          style: 'float:right; margin-right: 10px;'
+      ) %>
+
       <% end -%>
       
-
-       
-
   </nav>
 
 <input id="user_activity" name="user_activity"  type="hidden" value="active" />

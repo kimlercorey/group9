@@ -24,8 +24,11 @@
 		<td><%= number_to_currency item[:quantity]*item[:sellable].price %></td>
 		<% if page == "cart" -%>
 		<td style="line-height: 2em;">
-		<span class="cart btn-sm btn-warning">
-			<%= link_to "Remove item", piggybak.remove_item_url(item[:sellable].id), :method => :delete %>
+		
+
+		<%= link_to "<button class='cart btn-sm btn-warning'>Remove items</button>".html_safe, piggybak.remove_item_url(item[:sellable].id), :method => :delete %>
+
+
 		</span>	
 		</td>
 		<% end -%>

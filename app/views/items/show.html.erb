@@ -1,38 +1,32 @@
 <%- model_class = Item -%>
 
-
-
 <div class="page-header">
   <h1><%=t '.title', :default =>@item.title %></h1>
 </div>
 
-
 <!-- begin detail item view (_@item.html.erb) -->
-<div class="container-full" style="padding: 10px;">
-
+<div class="container-full col-md-8 col-md-offset-2">
 
 <!-- Price, title and sku -->
     <%= image_tag @item.image_url.to_s, size:"300" %>
     <div class="top-lines">
-      <div class="item_title lead left" ><%= @item.title %> <p class="muted"> <%= "(#{@item.piggybak_sellable.sku})" rescue " " %></p></div>
-      <div class="sku left"></div>  
+      <h3><%= @item.title %> <small class="sku"><%= "(#{@item.piggybak_sellable.sku})" rescue " " %></small></h3>
       <div class="price lead right" > $<%= @item.price%> </div>
     </div>
 
     <!-- Item details paragraph -->
-    <div class="text left" style="margin-bottom: 10px; margin-top: 10px; ">
-    
+    <div class="text left" style="margin-bottom: 10px; margin-top: 10px;">
     <%= @item.details %>
     </div>
     
-    <!-- Symptoms -->
+       <!-- Symptoms -->
     <% if @item.symptoms.count > 0 %>
     <div class="symptoms left" >
     <div class="title" >Used to address</div>
     <% @item.symptoms.all.each { |symp| %>
-    <span class="label label-default" style="margin:2px;">
-        <%= link_to(symp.title, symp, style: 'color:#FFFFFF;') %>
-      </span>
+      <a href="<%= url_for(symp) %>" type="button" class="label label-default" style="margin:2px; color:#FFFFFF;">
+        <%= symp.title %>
+      </a>
     <% } %>
     </div> 
     <br/> 
@@ -43,53 +37,16 @@
     <div class="tags left" >
     <div class="title" >Other Benefits </div>
     <% @item.tags.all.each { |tag| %>
-    <span class="label label-default" style="margin:2px;">
-        <%= link_to(tag.title, tag, style: 'color:#FFFFFF;') %>
-      </span>
+      <a href="<%= url_for(tag) %>" type="button" class="label label-default" style="margin:2px; color:#FFFFFF;">
+        <%= tag.title %>
+      </a>
     <% } %>
     </div>
     <%end%>
- 
 
 <div id="cart_form" style="margin-top: 20px;">
     <%= cart_form(@item) %>
 </div>
 
-
-
 </div>
 <!-- end detail item view -->
-
-
-
-
-
-
-<!-- 
-<dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
-  <dd><%= @item.title %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:details) %>:</strong></dt>
-  <dd><%= @item.details %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:category_id) %>:</strong></dt>
-  <dd><%= @item.category_id %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:price) %>:</strong></dt>
-  <dd><%= @item.price %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:image) %>:</strong></dt>
-  <dd><%= @item.image %></dd>
-</dl>
-
-<div id="cart_form">
-    <%= cart_form(@item) %>
-</div>
-
-<%= link_to t('.back', :default => t("helpers.links.back")),
-              items_path, :class => 'btn btn-default'  %>
-<%= link_to t('.edit', :default => t("helpers.links.edit")),
-              edit_item_path(@item), :class => 'btn btn-default' %>
-<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-              item_path(@item),
-              :method => 'delete',
-              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-              :class => 'btn btn-danger' %>
--->
