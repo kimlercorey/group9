@@ -1,6 +1,6 @@
 <% if @cart.sellables.any? -%>
 <%= form_tag piggybak.cart_update_url do -%>
-<table cellpadding="5" cellspacing="0" width="100%">
+<table cellpadding="5" cellspacing="0" width="100%" style="max-width: 1150px; min-width: 600px;">
 	<tr>
 		<th id="item_col">Item</th>
 		<th id="price_col">Price</th>
@@ -65,18 +65,54 @@
 		<td id="order_total"></td>
 	</tr>
 	<% end -%>
-</table>
 
+	<tr>
+		<td colspan="<%= page == "cart" ? "5" : "4" %>" >
 <% if page == "cart" %>
 <div style="margin-top: 25px;">
 <div data-no-turbolink style="float: right;">
-	<%= link_to "Proceed to Checkout", piggybak.orders_url, :id => "checkout", class: "btn btn-success", style: 'color:#FFFFFF;' %>
+<!-- Split button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-info" onclick="window.location.assign('/')"> Continue Shopping </button>
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="/">Search</a></li>
+    <li><a href="/<%= url_for 'symptoms' %>">Browse by Symptom</a></li>
+    <li><a href="/<%= url_for 'tags' %>">Browse by Benefit</a></li>
+    <li><a href="/<%= url_for 'categories' %>">Browse by Category</a></li>
+  </ul>
+</div>
+<%= link_to "Proceed to Checkout", piggybak.orders_url, :id => "checkout", class: "btn btn-success", style: 'color:#FFFFFF;' %>
 </div>
 <%= submit_tag "Update", :id => "update", class: "cart btn-sm btn-info" %>
 </div>
-<% end -%>
+
+
+</td>
+		<td>
+			
+			</td>
+		<td>
+		</td>
+
+	</tr>
+
+
+
+</table>
+
+
+
+
 
 <% end -%>
+
+
+<% end -%>
+
 <% else -%>
 <p id="emtpy">
 Your cart is empty.
