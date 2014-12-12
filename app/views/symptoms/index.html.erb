@@ -5,7 +5,7 @@
 <% @symptoms.each do |symptom| %>
 
 
-<%= link_to( "<button class='btn btn-primary' > (#{symptom.items.count} products) #{symptom.title} </button>".html_safe, symptom, style: 'color:#FFFFFF; margin:2px;' ) %>
+<%= link_to( "<button class='btn btn-info' > (#{symptom.items.count} products) #{symptom.title} </button>".html_safe, symptom, style: 'color:#FFFFFF; margin:2px;') %>
 
 
 

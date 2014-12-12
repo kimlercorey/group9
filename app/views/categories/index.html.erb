@@ -4,10 +4,7 @@
 
 <% @categories.each do |category| %>
 
-	<%= link_to( "<button class='btn btn-primary'> (#{category.items.count} products) #{category.title} </button>".html_safe, #link
-		category,
-		style: 'color:#FFFFFF; margin:2px;'
-	) %>
+	<%= link_to( "<button class='btn btn-primary'> (#{category.items.count} products) #{category.title} </button>".html_safe, category, style: 'color:#FFFFFF; margin:2px;') %>
 
 
 <% end %>

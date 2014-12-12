@@ -4,10 +4,7 @@
 
 <% @tags.each do |tag| %>
 
-<%= link_to( "<button class='btn btn-primary'> (#{tag.items.count} products) #{tag.title} </button>".html_safe, #link
-    tag,
-    style: 'color:#FFFFFF; margin:2px;'
-  ) %>
+<%= link_to( "<button class='btn btn-info'> (#{tag.items.count} products) #{tag.title} </button>".html_safe, tag, style: 'color:#FFFFFF; margin:2px;') %>
 
 
 <% end %>
