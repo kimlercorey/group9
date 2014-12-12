@@ -18,26 +18,60 @@
 .cart_light a:active { color:#f0f0f0;}
 /* end cart buttons on all pages*/ 
 
-/* start footer related css */
-html, body { height: 100%; }
-#wrap { height: auto !important; margin: 0 auto -60px; min-height: 100%; }
-#push, #footer { height: 60px; margin-top: 50px; }
-#footer { background-color: #f5f5f5; }
-@media (max-width: 767px) {
-  #footer { margin-left: -20px; margin-right: -20px; padding-left: 20px; padding-right: 20px;}
-}
-.container { max-width: 680px; width: auto;}
-.container .credit { margin: 20px 0; }
-/* start footer related css */
 
 </style>
 
+<style type="text/css">
+      /* Sticky footer styles (http://getbootstrap.com/2.3.2/examples/sticky-footer-navbar.html)  */
 
+      html,
+      body {
+        height: 100%;
+      }
+      
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        margin: 0 auto -125px;
+      }
+
+      
+      #push,
+      #footer {
+        height: 50px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+
+
+      #wrap > .container {
+        padding-top: 60px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+      
+    </style>
 
 </head>
 <body>
+<div id="wrap" style="padding-top: 50px;">
 
-  <nav class="navbar navbar-inverse" role="navigation">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <img src="/images/logo/HerbsOnlineSmall.png">    
       
       <% if current_user -%>
@@ -121,13 +155,13 @@ end
 raw(s)
 -%>
 </ol>
-
-
 <!-- end breadcrumbs -->
 
+
+
+
+
 <!-- Small modal -->
-
-
 <div id="stale_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
   <div class="modal-dialog modal-sm">
   <div class="modal-content">
@@ -163,11 +197,10 @@ raw(s)
 
 <div id="content" style="margin-left:25px;margin-right:25px;">
 <%= yield %>
-<%= render partial: "layouts/footer" %>
+
 
 </div>
 
-<!-- TODO: Move js inactivity check to a nice and tidy partial -->
 <script>
 
 // starts the intervals and watches 
@@ -206,7 +239,7 @@ raw(s)
               $("#user_activity").val("inactive"); }
             else {
                $("#countdown").val( inactivity_delta+inactivity_max_tick-tick);
-               $("span#cart_span div.btn.btn-info.cart_light").css({"background-color": '#FFD700'});
+               $("span#cart_span div.btn.btn-info.cart_light").css({"background-color": '#EFBC36'});
             }
         }
 
@@ -239,7 +272,7 @@ raw(s)
      if( $("#cart_span").html().length > 5){      
         tick =0; $("#user_activity").val("active") ;
         $("#countdown").val(time_to_respond_before_force_logout);
-        $("span#cart_span div.btn.btn-info.cart_light").css({"background-color": '#90EE90'});
+        $("span#cart_span div.btn.btn-info.cart_light").css({"background-color": '#489C48'});
         clearInterval(user_timer);
         set_intervals();
       } else {
@@ -261,5 +294,8 @@ raw(s)
 
 </script>
 
+</div>
+<%= render partial: "layouts/footer" %>
+<!-- TODO: Move js inactivity check to a nice and tidy partial -->
 </body>
 </html>

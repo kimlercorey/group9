@@ -2,7 +2,15 @@
 
 <div class="page-header lead">Items related to: <%= @tag.title %></div>
 
+
+<div class="row">
 <!-- show matching items -->
 <% @tag.items.each do |item| %>
+
 <%= render partial: "items/simple", object: item  %>
+
 <% end %>
+
+
+
+</div>

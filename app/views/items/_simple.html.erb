@@ -1,63 +1,103 @@
-<!-- start simple view (_simple.html.erb) -->
-<style>
+ 
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+        <!-- 
+        <%= image_tag simple.image_url.to_s, size:"200", class:"height: 200px; width: 100%; display: block;" %>
+        -->
+          <img alt="100%x200" data-src="holder.js/100%x200" style="height: 200px; width: 100%; display: block;" src="<%= simple.image_url.to_s %>" data-holder-rendered="true">
+          <div class="caption">
+          -->
+            <h3><%= simple.title %> <small><%= simple.piggybak_sellable.sku rescue " " %><small></h3>
+            <p><%= truncate(simple.details, 
+                  :length => 150, 
+                  :omission => '...') { link_to(raw('<em>[more]</em>'),simple) } 
+                %></p>
+            <p>
+            
 
-.same_height {
-    display: table;
-}
+             <a href="<%= url_for(simple)%>" class="btn btn-default btn-primary" style="float: right; color:#FFFFFF;" type="button"> <span>View details</span> </a>
 
-[class*="col-"] {
-    float: none;
-    display: table-cell;
-    vertical-align: top;
-}
-</style>
 
-  <div class = "thumbnail col-sm-6 col-md-2 same_height" style="padding: 10px;">
-    
-  <!-- Price, title and sku -->
-    <%= image_tag simple.image_url.to_s, size:"100" %>
-    <div class="top-lines">
-      <div class="item_title lead left" ><%= simple.title %></div>
-      <div class="sku left"><%= simple.piggybak_sellable.sku rescue " " %></div>  
-      <div class="price lead right" > <%= simple.price%> <%= "item price" %></div>
-    </div>
+            <h3 style="text-align: left;"><%= simple.piggybak_sellable.price rescue " "%></h3></span>
 
-    <!-- Item details paragraph -->
-    <p class="text left" style="margin-bottom: 10px; margin-top: 10px; ">
-    <%= truncate(simple.details, 
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+<!--
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+
+<%= image_tag simple.image_url.to_s, size:"150" %>
+
+<%= simple.piggybak_sellable.price rescue " "%>
+<%= truncate(simple.details, 
                   :length => 150, 
                   :omission => '...') { link_to(raw('<em>[more]</em>'),simple) } 
     %>
-
-    </p>
-    
-    <!-- Symptoms -->
+<!-- Symptoms -  - >
     <% if simple.symptoms.count > 0 %>
-    <div class="symptoms left" >
-    <div class="title" >Used to address</div>
+    
+    Used to address
     <% simple.symptoms.all.each { |symp| %>
       <a href="<%= url_for(symp) %>" type="button" class="label label-default" style="margin:2px; color:#FFFFFF;">
         <%= symp.title %>
       </a>
     <% } %>
-    </div> 
+    
     <br/> 
     <%end%>
 
-    <!-- Benefits 7 other information: (Tags) -->
+    <!-- Benefits 7 other information: (Tags) -  ->
     <% if simple.tags.count > 0 %>
-    <div class="tags left" >
-    <div class="title" >Other Benefits </div>
+    Other Benefits 
     <% simple.tags.all.each { |tag| %>
       <a href="<%= url_for(tag) %>" type="button" class="label label-default" style="margin:2px; color:#FFFFFF;">
         <%= tag.title %>
       </a>
     <% } %>
-    </div>
     <%end%>
- 
-  <!-- Link to item -->
-  <a href="<%= url_for(simple)%>" class="btn btn-default btn-primary" style="float: right; color:#FFFFFF;" type="button"> <span>View <%= simple.title %> details</span> </a>
 
+    <!-- Link to item -  ->
+  <a href="<%= url_for(simple)%>" class="btn btn-default btn-primary" style="float: right; color:#FFFFFF;" type="button"> <span>View <%= simple.title %> details</span> </a>
 </div>
-<!-- end simple view -->
+</div>
+
+-->
+
+
+  <!--
+
+  <div class="row row-xs-height">
+  <div class = "thumbnail col-sm-6 col-xs-height" >
+  <div class="modal-header" style="height: 20px;">
+<div class="item_title lead left" style="margin-top: -13px;"></div>
+  </div>
+
+ 
+    <div style="width: 150px; height: 125px;">
+    
+    </div>
+    <div class="top-lines">
+      
+      <div class="sku left"></div>  
+      <div class="price lead right" >  </div>
+      <div class="price lead right" > <%= simple.price%> <%= "item price" %></div>
+    </div>
+
+    Item details paragraph 
+    <p class="text left" style="margin-bottom: 10px; margin-top: 10px; ">
+    
+
+    </p>
+    
+    
+ 
+  
+
+</div></div>
+end simple view -->

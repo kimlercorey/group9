@@ -5,7 +5,9 @@
 
 <!-- show matching items -->
 <% @category.items.each do |item| %>
+<div class="row">
 <%= render partial: "items/simple", object: item  %>
+</div>
 <% end %>
 
 </div>

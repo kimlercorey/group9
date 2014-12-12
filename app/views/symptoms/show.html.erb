@@ -2,7 +2,9 @@
 
 <div class="page-header lead">Items which treat <%= @symptom.title %></div>
 
+<div class="row">
 <!-- show matching items -->
 <% @symptom.items.each do |item| %>
 <%= render partial: "items/simple", object: item  %>
 <% end %>
+</div>
