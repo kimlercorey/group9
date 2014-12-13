@@ -6,8 +6,8 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    #@items = Item.all
-    @items = Item.where(Item.arel_table[:image].not_eq(true))
+    @items = Item.all
+    #@items = Item.where(Item.arel_table[:image].not_eq(true))
 
   end
 
