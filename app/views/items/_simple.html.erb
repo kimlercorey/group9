@@ -12,7 +12,7 @@
 
         <p>
           <a href="<%= url_for(simple)%>" class="btn btn-default btn-primary" style="color:#FFFFFF;" type="button"> <span>View details</span> </a>
-          <h3 style="text-align: left;"><%= simple.piggybak_sellable.price rescue " "%></h3>
+          <h3 style="text-align: left;"><%= number_to_currency simple.piggybak_sellable.price rescue " "%></h3>
         </p>
 
       </div>
