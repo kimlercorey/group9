@@ -4,15 +4,12 @@
   <title>Herbonline</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script>
-  document.createElement('header'); document.createElement('footer'); document.createElement('section'); document.createElement('article'); document.createElement('aside'); document.createElement('nav');
-  </script>
+  
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- manual overrides - mostly development css in transition -->
 <style>
-
 /* start cart buttons on all pages*/
 .cart_light a { padding:5px; font-weight:bold; }
 .cart_light a:link { color:#ffffff;}
@@ -21,58 +18,13 @@
 .cart_light a:active { color:#f0f0f0;}
 /* end cart buttons on all pages*/ 
 
-
+body { margin-top: 50px;}
 </style>
 
-<style type="text/css">
-      /* Sticky footer styles (http://getbootstrap.com/2.3.2/examples/sticky-footer-navbar.html)  */
-
-      html,
-      body {
-        height: 100%;
-      }
-      
-      #wrap {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        margin: 0 auto -125px;
-      }
-
-      
-      #push,
-      #footer {
-        height: 50px;
-      }
-      #footer {
-        background-color: #f5f5f5;
-      }
-
-      
-      @media (max-width: 767px) {
-        #footer {
-          margin-left: -20px;
-          margin-right: -20px;
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-      }
-
-
-
-      #wrap > .container {
-        padding-top: 60px;
-      }
-      .container .credit {
-        margin: 20px 0;
-      }
-
-      
-    </style>
 
 </head>
 <body>
-<div id="wrap" style="padding-top: 50px;">
+
 
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <img src="/images/logo/HerbsOnlineSmall.png">    
@@ -199,10 +151,12 @@ raw(s)
 <!-- end popup warning -->
 
 <div id="content" style="margin-left:25px;margin-right:25px;">
-<%= yield %>
-
-
+  <%= yield %>
 </div>
+
+
+<%= render partial: "layouts/footer" %>
+<!-- TODO: Move js inactivity check to a nice and tidy partial -->
 
 <script>
 
@@ -294,11 +248,10 @@ raw(s)
         window.location = "/forced_loggedout";  
     });
 
+  // ie as usual
+  document.createElement('header'); document.createElement('footer'); document.createElement('section'); document.createElement('article'); document.createElement('aside'); document.createElement('nav');
 
 </script>
 
-</div>
-<%= render partial: "layouts/footer" %>
-<!-- TODO: Move js inactivity check to a nice and tidy partial -->
 </body>
 </html>

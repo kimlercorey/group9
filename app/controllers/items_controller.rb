@@ -1,10 +1,14 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
+
+  
   # GET /items
   # GET /items.json
   def index
-    @items = Item.all
+    #@items = Item.all
+    @items = Item.where(Item.arel_table[:image].not_eq(true))
+
   end
 
   # GET /items/1

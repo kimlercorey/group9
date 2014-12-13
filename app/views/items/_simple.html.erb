@@ -1,103 +1,23 @@
- 
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-        <!-- 
-        <%= image_tag simple.image_url.to_s, size:"200", class:"height: 200px; width: 100%; display: block;" %>
-        -->
-          <img alt="100%x200 product image of <%= simple.title %>" data-src="holder.js/100%x200" style="height: 200px; width: 100%; display: block;" src="<%= simple.image_url.to_s %>" data-holder-rendered="true">
-          <div class="caption">
+<% if simple.title %>
 
-            <h3><%= simple.title %> <small><%= simple.piggybak_sellable.sku rescue " " %><small></h3>
-            <p><%= truncate(simple.details, 
-                  :length => 150, 
-                  :omission => '...') { link_to(raw('<em>[more]</em>'),simple) } 
-                %></p>
-            <p>
-            
-
-             <a href="<%= url_for(simple)%>" class="btn btn-default btn-primary" style="float: right; color:#FFFFFF;" type="button"> <span>View details</span> </a>
-
-
-            <h3 style="text-align: left;"><%= simple.piggybak_sellable.price rescue " "%></h3></span>
-
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-
-<!--
-
-<div class="row">
   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img alt="100%x200 product image of <%= simple.title %>" data-src="holder.js/100%x200" style="height: 200px; width: 100%; display: block;" src="<%= simple.image_url.to_s %>" data-holder-rendered="true">
+      <div class="caption">
 
-<%= image_tag simple.image_url.to_s, size:"150" %>
+        <h3><%= simple.title %> <small><%= simple.piggybak_sellable.sku rescue " " %><small></h3>
+        <p>
+          <%=truncate(simple.details, :length=> 150, :omission => '...') { link_to(raw('<em>[more]</em>'),simple) } %>
+        </p>
 
-<%= simple.piggybak_sellable.price rescue " "%>
-<%= truncate(simple.details, 
-                  :length => 150, 
-                  :omission => '...') { link_to(raw('<em>[more]</em>'),simple) } 
-    %>
-<!-- Symptoms -  - >
-    <% if simple.symptoms.count > 0 %>
-    
-    Used to address
-    <% simple.symptoms.all.each { |symp| %>
-      <a href="<%= url_for(symp) %>" type="button" class="label label-default" style="margin:2px; color:#FFFFFF;">
-        <%= symp.title %>
-      </a>
-    <% } %>
-    
-    <br/> 
-    <%end%>
+        <p>
+          <a href="<%= url_for(simple)%>" class="btn btn-default btn-primary" style="color:#FFFFFF;" type="button"> <span>View details</span> </a>
+          <h3 style="text-align: left;"><%= simple.piggybak_sellable.price rescue " "%></h3>
+        </p>
 
-    <!-- Benefits 7 other information: (Tags) -  ->
-    <% if simple.tags.count > 0 %>
-    Other Benefits 
-    <% simple.tags.all.each { |tag| %>
-      <a href="<%= url_for(tag) %>" type="button" class="label label-default" style="margin:2px; color:#FFFFFF;">
-        <%= tag.title %>
-      </a>
-    <% } %>
-    <%end%>
-
-    <!-- Link to item -  ->
-  <a href="<%= url_for(simple)%>" class="btn btn-default btn-primary" style="float: right; color:#FFFFFF;" type="button"> <span>View <%= simple.title %> details</span> </a>
-</div>
-</div>
-
--->
-
-
-  <!--
-
-  <div class="row row-xs-height">
-  <div class = "thumbnail col-sm-6 col-xs-height" >
-  <div class="modal-header" style="height: 20px;">
-<div class="item_title lead left" style="margin-top: -13px;"></div>
+      </div>
+    </div>
   </div>
-
- 
-    <div style="width: 150px; height: 125px;">
-    
-    </div>
-    <div class="top-lines">
-      
-      <div class="sku left"></div>  
-      <div class="price lead right" >  </div>
-      <div class="price lead right" > <%= simple.price%> <%= "item price" %></div>
-    </div>
-
-    Item details paragraph 
-    <p class="text left" style="margin-bottom: 10px; margin-top: 10px; ">
-    
-
-    </p>
-    
-    
- 
-  
-
-</div></div>
-end simple view -->
+  </div>
+  </div>
+  <% end %>
