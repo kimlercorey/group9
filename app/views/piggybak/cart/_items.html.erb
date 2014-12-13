@@ -13,25 +13,25 @@
       <% @cart.sellables.each do |item| %>
         <tr>
           <td>
-            <%=i tem[:sellable].description %>
+            <%=item[:sellable].description %>
           </td>
           <td>
-            <%=n umber_to_currency item[:sellable].price %>
+            <%=number_to_currency item[:sellable].price %>
           </td>
           <td>
             <% if page=="cart" -%>
-              <%=n umber_field_tag "quantity[#{item[:sellable].id}]", item[:quantity] %>
+              <%=number_field_tag "quantity[#{item[:sellable].id}]", item[:quantity] %>
                 <% else -%>
-                  <%=i tem[:quantity] %>
+                  <%=item[:quantity] %>
                     <% end -%>
           </td>
           <td>
-            <%=n umber_to_currency item[:quantity]*item[:sellable].price %>
+            <%=number_to_currency item[:quantity]*item[:sellable].price %>
           </td>
           <% if page=="cart" -%>
             <td style="line-height: 2em;">
 
-              <%=l ink_to "<button class='cart btn-sm btn-warning'>Remove items</button>".html_safe, piggybak.remove_item_url(item[:sellable].id), :method=> :delete %>
+              <%=link_to "<button class='cart btn-sm btn-warning'>Remove items</button>".html_safe, piggybak.remove_item_url(item[:sellable].id), :method=> :delete %>
 
                 </span>
             </td>
@@ -46,7 +46,7 @@
             <td><span class="lead">Subtotal</span>
             </td>
             <td id="subtotal_total" data-total="<%= @cart.total %>" class="lead">
-              <%=n umber_to_currency @cart.total %>
+              <%=number_to_currency @cart.total %>
             </td>
           </tr>
           <% if page !="cart" -%>
@@ -101,9 +101,9 @@
                                     </li>
                                   </ul>
                                 </div>
-                                <%=l ink_to "Proceed to Checkout", piggybak.orders_url, :id=> "checkout", class: "btn btn-success", style: 'color:#FFFFFF;' %>
+                                <%=link_to "Proceed to Checkout", piggybak.orders_url, :id=> "checkout", class: "btn btn-success", style: 'color:#FFFFFF;' %>
                               </div>
-                              <%=s ubmit_tag "Update", :id=> "update", class: "cart btn-sm btn-info" %>
+                              <%=submit_tag "Update", :id=> "update", class: "cart btn-sm btn-info" %>
                             </div>
 
                         </td>
